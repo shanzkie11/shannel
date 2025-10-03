@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeMoo - Log in </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fff;
+        }
+        header {
+            background-color: #4b3832;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #2d2926;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            cursor: pointer;
+        }
+        .container {
+            background-image: url('BG5.jpg');
+            background-size: cover;	
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .content h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .content p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .content a {
+            background-color: #c9a66b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .card {
+            background-color: #4b3832;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 30%;
+            margin: 20px 0;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 20px;
+            text-align: left;
+        }
+        .card-content h3 {
+            margin-top: 0;
+        }
+        .card-content p {
+            font-size: 0.9em;
+        }
+        .card-content a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #c9a66b;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #2d2926;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+.content form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.content form input[type="text"],
+.content form input[type="email"],
+.content form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.content form textarea {
+    resize: none;
+}
+
+.content form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #c9a66b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content form button:hover {
+    background-color: #b1864e;
+}
+
+.content form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.content form input[type="text"],
+.content form input[type="email"],
+.content form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.content form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #c9a66b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content form button:hover {
+    background-color: #b1864e;
+}
+
+.content p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content p a:hover {
+    text-decoration: underline;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+       <a href="HOME.html">Home</a>
+        <a href="MENU.html">Our Menu</a>
+        <a href="ContactUs.html">Contact</a>
+        <div>
+            <a href="SignUp.html">Sign Up</a>
+            <a href="LogIn.html">Log In</a>
+            <a href="#cart">🛒</a>
+
+        </div>
+    </nav>
+    <div class="container" id="login">
+    <div class="content">
+        <h1>Log In</h1>
+        <form action="#" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Log In</button>
+        </form>
+        <p>Don't have an account yet? <a href="SignUp.html">Sign Up</a></p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+
+        <footer>
+        <p>&copy; 2024 CoffeeMoo Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

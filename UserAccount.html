@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account - CoffeeMoo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fff;
+        }
+        header {
+            background-color: #4b3832;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #2d2926;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            cursor: pointer;
+        }
+        .container {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+        }
+        .content h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .content a {
+            background-color: #c9a66b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: inline-block;
+        }
+        .content a:hover {
+            background-color: #b1864e;
+        }
+        footer {
+            background-color: #2d2926;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+	
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#contact">Contact Us</a>
+        <div>
+            <a href="#account">My Account</a>
+            <a href="#cart">🛒 Cart</a>
+            <a href="#logout">Log Out</a>
+        </div>
+    </nav>
+    <div class="container" id="account">
+        <div class="content">
+            <h1>Welcome, [User's Name]</h1>
+            <p>Email: user@example.com</p>
+            <p>Member since: January 2023</p>
+            <a href="#edit-profile">Edit Profile</a>
+            <a href="#order-history">Order History</a>
+            <a href="#logout">Log Out</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 CoffeeMoo Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

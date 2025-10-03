@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeMoo - Sign Up</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fff;
+        }
+        header {
+            background-color: #4b3832;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #2d2926;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            cursor: pointer;
+        }
+        nav .user-info {
+            display: flex;
+            align-items: center;
+        }
+        nav .user-info span {
+            margin-right: 10px;
+        }
+        .container {
+            background-image: url('BG4.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .content h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .content p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .content a {
+            background-color: #c9a66b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .card {
+            background-color: #4b3832;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 30%;
+            margin: 20px 0;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 20px;
+            text-align: left;
+        }
+        .card-content h3 {
+            margin-top: 0;
+        }
+        .card-content p {
+            font-size: 0.9em;
+        }
+        .card-content a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #c9a66b;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #2d2926;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .content form {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content form label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .content form input[type="text"],
+        .content form input[type="email"],
+        .content form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .content form button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #c9a66b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .content form button:hover {
+            background-color: #b1864e;
+        }
+
+        .content p {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .content p a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .content p a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="HOME.html">Home</a>
+        <a href="MENU.html">Our Menu</a>
+        <a href="ContactUs.html">Contact</a>
+            <a href="SignUp.html">Sign Up</a>
+            <a href="LogIn.html">Log In</a>
+            <a href="#cart">🛒</a>
+        <div class="user-info">
+            <span id="user-name"></span>
+        </div>
+    </nav>
+    <div class="container" id="signup">
+        <div class="content">
+            <h1>Sign Up</h1>
+            <p>Join our community to receive exclusive offers, updates, and more!</p>
+            <form id="signup-form">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#login" onclick="showLogin()">Log In</a></p>
+        </div>
+    </div>
+
+    <div class="container" id="login" style="display:none;">
+        <div class="content">
+            <h1>Log In</h1>
+            <p>Welcome back! Please log in to continue.</p>
+            <form id="login-form">
+                <label for="login-username">Username:</label><br>
+                <input type="text" id="login-username" name="username" required><br>
+                <label for="login-password">Password:</label><br>
+                <input type="password" id="login-password" name="password" required><br>
+                <button type="submit">Log In</button>
+            </form>
+            <p>Don't have an account? <a href="#signup" onclick="showSignup()">Sign Up</a></p>
+        </div>
+    </div>
+
+    <div class="container" id="welcome" style="display:none;">
+        <div class="content">
+            <h1>Welcome, <span id="welcome-username"></span>!</h1>
+            <p>Thank you for logging in. Enjoy our exclusive offers and updates!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CoffeeMoo Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const users = {};
+
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (username in users) {
+                alert('Username already taken.');
+            } else {
+                users[username] = { email: email, password: password };
+                alert('Sign up successful! Please log in.');
+                showLogin();
+            }
+        });
+
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('login-username').value;
+            const password = document.getElementById('login-password').value;
+
+            if (username in users && users[username].password === password) {
+                document.getElementById('welcome-username').textContent = username;
+                document.getElementById('user-name').textContent = username;
+        	document.querySelector('nav a[href="LogIn.html"]').textContent = "Log Out";
+                showWelcome();
+            } else {
+                alert('Invalid username or password.');
+            }
+        });
+
+        function showSignup() {
+            document.getElementById('signup').style.display = 'block';
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('welcome').style.display = 'none';
+        }
+
+        function showLogin() {
+            document.getElementById('signup').style.display = 'none';
+            document.getElementById('login').style.display = 'block';
+            document.getElementById('welcome').style.display = 'none';
+        }
+
+        function showWelcome() {
+            document.getElementById('signup').style.display = 'none';
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('welcome').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
