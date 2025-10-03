@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout Demopage - Checkout</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="thankyou.html">Thank You</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Checkout</h1>
+    <form action="thankyou.html" method="GET" class="checkout-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="address">Shipping Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="product">Product:</label>
+      <select id="product" name="product" required>
+        <option value="demo1">Demo Product 1</option>
+        <option value="demo2">Demo Product 2</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1" required />
+
+      <button type="submit" class="button">Submit Order</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Checkout Demopage</p>
+  </footer>
+</body>
+</html>
